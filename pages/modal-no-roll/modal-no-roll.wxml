@@ -1,0 +1,14 @@
+
+
+<!-- 弹窗内不会滚动 -->
+<view class="contanier">
+    <view wx:for="{{list}}" class="list-item" bindtap="handleClick">{{item}}</view>
+    <view wx:if="{{showModal}}" class="modal" catchtouchmove>
+        <view class="modal-content">
+            <view class="hint">黑金团队很棒棒</view>
+            <button bindtap="handleBtnClick">取消</button>
+            <button bindtap="handleBtnClick">确定</button>
+        </view>
+        <view class="mask" bindtap="handleBtnClick"></view>
+    </view>
+</view>

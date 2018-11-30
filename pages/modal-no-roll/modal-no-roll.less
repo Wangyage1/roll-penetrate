@@ -1,0 +1,54 @@
+
+.contanier {
+    width: 750rpx;
+}
+
+
+.list-item {
+    width: 750rpx;
+    height: 100rpx;
+    padding: 20rpx 36rpx;
+    box-sizing: border-box;
+    border-bottom: 1px solid  #BFC1C6;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    .modal-content {
+        position: relative;
+        width: 600rpx;
+        height: 300rpx;
+        margin: 300rpx auto;
+        border-radius: 10rpx;
+        z-index: 105;
+        background: #fff;
+        button {
+            display: inline-block;
+            width: 150rpx;
+            margin-left: 100rpx;
+            height: 80rpx;
+            font-size: 30rpx;
+
+        }
+        .hint {
+            width: 600rpx;
+            height: 200rpx;
+            padding: 40rpx;
+            box-sizing: border-box;
+
+        }
+    }
+    .mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 100;
+    }
+}
