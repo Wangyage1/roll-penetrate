@@ -18,8 +18,9 @@
 .modal .modal-content {
   position: relative;
   width: 600rpx;
-  height: 300rpx;
+  height: 400rpx;
   margin: 300rpx auto;
+  overflow: auto;
   border-radius: 10rpx;
   z-index: 105;
   background: #fff;
@@ -33,7 +34,8 @@
 }
 .modal .modal-content .hint {
   width: 600rpx;
-  height: 200rpx;
+  height: 500rpx;
+  border: 1px solid red;
   padding: 40rpx;
   box-sizing: border-box;
 }
@@ -45,4 +47,12 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   z-index: 100;
+}
+.noscroll {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }

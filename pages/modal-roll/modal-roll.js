@@ -2,10 +2,18 @@
 
 Page({
     data: {
-        list:[1,2,3,4,5,6,7,8, 1,2,3,4,5,6,7,8,5,6,7,8],
+        list:[],
         showModal: false
     },
-    onLoad: function() {},
+    onLoad: function() {
+        const list = [];
+        for(let i =0;i<20;i++) {
+            list[i] = 'list'+i;
+        }
+        this.setData({
+            list: list
+        })
+    },
     handleClick: function() {
        this.setData({
             showModal: true

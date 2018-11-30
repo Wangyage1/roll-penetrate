@@ -1,11 +1,14 @@
 
 
-<!-- 弹窗内不会滚动 -->
+<!-- 弹窗内会滚动 fixed定位解决 -->
 <view class="contanier">
-    <view wx:for="{{list}}" class="list-item" bindtap="handleClick">{{item}}</view>
-    <view wx:if="{{showModal}}" class="modal" catchtouchmove>
+    <view class="{{showModal ? 'noscroll' : ''}}">
+        <view wx:for="{{list}}" class="list-item " bindtap="handleClick">{{item}}</view>
+    </view>
+    
+    <view wx:if="{{showModal}}" class="modal" >
         <view class="modal-content">
-            <view class="hint">黑金团队很棒棒</view>
+            <view class="hint">黑金团队很棒棒黑金团队很棒棒黑金团队很棒棒黑金团队很棒棒黑金团队很棒棒黑金团队很棒棒</view>
             <button bindtap="handleBtnClick">取消</button>
             <button bindtap="handleBtnClick">确定</button>
         </view>
