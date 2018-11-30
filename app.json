@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/modal-no-roll/modal-no-roll",
-    "pages/modal-roll/modal-roll"
+    "pages/modal-roll/modal-roll",
+    "pages/modal-roll2/modal-roll"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,12 @@
+<!-- 弹窗内会滚动 scroll-view -->
+<scroll-view class="contanier" scroll-y="{{!showModal}}">
+    <view wx:for="{{list}}" class="list-item " bindtap="handleClick">{{item}}</view>
+    <view wx:if="{{showModal}}" class="modal">
+        <view class="modal-content">
+            <view class="hint">黑金团队很棒棒黑金团队很棒棒黑金团队很棒棒黑金团队很棒棒黑金团队很棒棒黑金团队很棒棒</view>
+            <button bindtap="handleBtnClick">取消</button>
+            <button bindtap="handleBtnClick">确定</button>
+        </view>
+        <view class="mask" bindtap="handleBtnClick"></view>
+    </view>
+</scroll-view>
